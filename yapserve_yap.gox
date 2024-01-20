@@ -1,0 +1,21 @@
+import (
+	"context"
+	"flag"
+
+	_ "github.com/qiniu/x/http/fsx/cached"
+	_ "github.com/qiniu/x/http/fsx/filter"
+	_ "github.com/qiniu/x/http/fsx/local"
+)
+
+addr := flag.string("host", ":8888", "server host")
+flag.parse
+if flag.nArg < 1 {
+	println "yapserve [flags] scheme"
+	flag.printDefaults
+	return
+}
+scheme := flag.arg(0)
+
+static "/", context.background, scheme
+
+run *addr
