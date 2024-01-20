@@ -19,7 +19,7 @@ func main() {
 //line kodourl/kodourl.gop:13:1
 	if *help || len(args) != 3 {
 //line kodourl/kodourl.gop:14:1
-		fmt.Println("kodourl [flags] <bucket> <ak> <sk>\n")
+		fmt.Println("kodourl [flags] <bucket> <ak> <sk>")
 //line kodourl/kodourl.gop:15:1
 		flag.PrintDefaults()
 //line kodourl/kodourl.gop:16:1

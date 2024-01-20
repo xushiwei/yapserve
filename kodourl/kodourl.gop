@@ -11,7 +11,7 @@ flag.parse
 
 args := flag.args
 if *help || args.len != 3 {
-	println "kodourl [flags] <bucket> <ak> <sk>\n"
+	println "kodourl [flags] <bucket> <ak> <sk>"
 	flag.printDefaults
 	return
 }

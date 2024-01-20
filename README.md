@@ -1,6 +1,12 @@
 yapserve - http static server based on YAP
 ====
 
+[![Build Status](https://github.com/xushiwei/yapserve/actions/workflows/go.yml/badge.svg)](https://github.com/xushiwei/yapserve/actions/workflows/go.yml)
+[![GitHub release](https://img.shields.io/github/v/tag/xushiwei/yapserve.svg?label=release)](https://github.com/xushiwei/yapserve/releases)
+[![Language](https://img.shields.io/badge/language-Go+-blue.svg)](https://github.com/goplus/gop)
+[![Language](https://img.shields.io/badge/framework-YAP-blue.svg)](https://github.com/goplus/yap)
+[![GoDoc](https://pkg.go.dev/badge/github.com/xushiwei/yapserve.svg)](https://pkg.go.dev/github.com/xushiwei/yapserve)
+
 `yapserve` start a http server that serves static files.
 
 **Usage**:
