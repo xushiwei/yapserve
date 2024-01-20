@@ -1,0 +1,24 @@
+import (
+	"flag"
+	"net/url"
+
+	"github.com/qiniu/x/token/protected"
+	_ "github.com/xushiwei/yapserve/env"
+)
+
+help := flag.bool("h", false, "show this help information")
+flag.parse
+
+args := flag.args
+if *help || args.len != 3 {
+	println "kodourl [flags] <bucket> <ak> <sk>\n"
+	flag.printDefaults
+	return
+}
+
+params := make(url.Values)
+params.set("ak", args[1])
+params.set("sk", args[2])
+query := protected.encode(params)!
+
+println "kodo:${args[0]}?${query}"
