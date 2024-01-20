@@ -7,6 +7,8 @@ import (
 	_ "github.com/qiniu/x/http/fsx/local"
 	_ "github.com/xushiwei/kodofs"
 	_ "github.com/xushiwei/yapserve/env"
+	_ "github.com/xushiwei/yapserve/fileblob"
+	_ "github.com/xushiwei/yapserve/s3"
 )
 
 addr := flag.string("host", ":8888", "server host")
